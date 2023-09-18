@@ -1,12 +1,11 @@
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.Map;
+
 public class Main
 {
     public static void main(String[] args) {
         HashMap<String, ArrayList<String>> contacts = new HashMap<>();
-        // String name = "Ivanov";
-        // String numTel = "89038754154";
+
         addContact("Ivanov", "89038754154", contacts);
         addContact("Ivanov", "89038754155", contacts);
         addContact("Petrov", "89088754155", contacts);
