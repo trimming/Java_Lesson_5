@@ -1,5 +1,5 @@
 public class Laptop {
-    private String brend;
+    private String brand;
     private String model;
     private double weight;
     private int RAM;
@@ -8,18 +8,18 @@ public class Laptop {
 
     @Override
     public String toString() {
-        return "Laptop{" +
-                "brend='" + brend + '\'' +
-                ", model='" + model + '\'' +
-                ", weight=" + weight +
-                ", RAM=" + RAM +
-                ", SSD=" + SSD +
-                ", diagonal=" + diagonal +
-                '}' + "\n";
+        return "[" +
+                diagonal + '"' + " Ноутбук " +
+                brand +
+                " " + model +
+                ", RAM " + RAM + "ГБ" +
+                ", SSD " + SSD + "ГБ" +
+                ", вес " + weight + "кг" +
+                ']';
     }
 
-    public Laptop(String brend, String model, double weight, int RAM, int SSD, double diagonal) {
-        this.brend = brend;
+    public Laptop(String brand, String model, double weight, int RAM, int SSD, double diagonal) {
+        this.brand = brand;
         this.model = model;
         this.weight = weight;
         this.RAM = RAM;
@@ -27,12 +27,12 @@ public class Laptop {
         this.diagonal = diagonal;
     }
 
-    public String getBrend() {
-        return brend;
+    public String getBrand() {
+        return brand;
     }
 
-    public void setBrend(String brend) {
-        this.brend = brend;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
